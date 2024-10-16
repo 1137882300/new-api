@@ -19,4 +19,4 @@ COPY . .
 
 RUN docker build -t new-api .
 RUN docker run --name new-api -d --restart always -p 3000:3000 -e TZ=Asia/Shanghai -v /home/ubuntu/data/new-api:/data calciumion/new-api:latest
-EXPOSE WEBSITE http://localhost:80
+EXPOSE WEBSITE http://localhost:3000
